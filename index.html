@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <link rel="stylesheet" href="index.css">
+    <title>Lazy Collector</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="player__information list__page">
+        <div class="list__pageHeading">
+          <p class="back__home">◀</p>
+          <p>Player Stats 🔋</p>
+        </div>
+        <div class="player__informationContainer"></div>
+        <p class="list__pageHeadingSmall" >Monsters Caught ⬇</p>
+        <div class="player__informationCollection"></div>
+        
+      </div>
+      <div class="monster__bag list__page">
+        <div class="list__pageHeading">
+          <p class="back__home">◀</p>
+          <p>Monster Bag 🎒</p>
+        </div>
+        <div class="list__pageItem">
+          <div class="list__pageImg"></div>
+          <div class="item">Name</div>
+          <div class="item">Attack</div>
+          <div class="item">Health</div>
+          <div class="item">Rating</div>
+          <div class="item">...</div>
+          </div>
+        <div class="monster__bagContainer"></div>
+      </div>
+      <div class="menu__overlay">
+        <div class="menu__item">Player Stats</div>
+        <div class="menu__item">Monster Bag</div>
+        <div class="menu__item">Roll Rare Encounter</div>
+        <div class="menu__item menu-item-border">Close</div>
+      </div>
+      <div class="nav">
+        <div class="nav__left">
+          <img class="menu" src="./img/logo.png"/>
+          <div class="playerProgression__dom">
+            <div class="playerLevel__dom">Level: 3</div>
+            <progress class="progress__bar" value="19" max=""></progress>
+            <div class="soulStones__dom">Soul Stones: 15</div>
+           
+          </div>
+          
+        </div>
+        <div class="nav__right">
+          <img src="./img/Refresh-Icon.png" alt="">
+          <div class=""><span class="passive__time"></span></div>
+        </div>
+        
+     
+      </div>
+      <div class="board">
+        <img class="enemyImage__dom" src='' alt='You need some rolls' ></img>
+        <div class="enemyStats__dom"></div>
+        <div class="message__dom"></div>
+      </div>
+      <div class="actionBar">
+        <div class="catch__btn btn"></div>
+        <div  class="roll__btn btn"></div>
+      </div>
+    </div>
+
+    <script type='module' src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Baloo 2', cursive;
+}
+
+.main {
+  font-size: 24px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  height: 8vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.nav .nav__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+}
+
+.nav .nav__left .playerProgression__dom {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.nav .nav__left .progress__bar {
+  width: 70px;
+}
+
+.nav .nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+}
+
+.nav .nav__right img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+}
+
+.board .enemyImage__dom {
+  width: 300px;
+  height: 300px;
+}
+
+.board .enemyStats__dom {
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.board .enemyStats__dom .need {
+  border: 1px solid black;
+}
+
+.actionBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 12vh;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+  margin: 10px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.btn:hover {
+  background-color: #74c074;
+}
+
+.menu {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.menu:hover {
+  opacity: 0.6;
+}
+
+.global__leaderboard {
+  display: none;
+}
+
+.monster__bag {
+  display: none;
+}
+
+.player__information {
+  display: none;
+}
+
+.change__username {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  position: fixed;
+  background-color: #2f4549;
+}
+
+.change__username form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.change__username form .change__usernameInput {
+  padding-left: 5px;
+}
+
+.change__username form .form__item {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.list__page {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 3;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  padding: 2vw;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  overflow-y: scroll;
+}
+
+.list__page .list__pageHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 100px;
+}
+
+.list__page .list__pageHeadingSmall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+}
+
+.list__page .list__pageItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.list__page .list__pageItem .list__pageImg {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.list__page .list__pageItem .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu__overlay {
+  position: fixed;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  -webkit-animation: menu-fade-in 500ms ease-in-out;
+          animation: menu-fade-in 500ms ease-in-out;
+}
+
+.menu__overlay .menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.menu__overlay .menu__item:hover {
+  opacity: 0.6;
+}
+
+.menu-item-border {
+  border-top: 1px solid #666666;
+}
+
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-id {
+  display: none;
+}
+
+.item-delete {
+  cursor: pointer;
+  color: #d64c4c;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.item-delete:hover {
+  opacity: 0.5;
+}
+
+.bg-day {
+  background-color: white;
+  color: black;
+}
+
+.bg-night {
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(67%, #002230));
+  background: linear-gradient(180deg, black 0%, #002230 67%);
+  color: white;
+}
+
+.back__home {
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  margin-right: 30px;
+}
+
+.message__dom {
+  height: 30px;
+}
+
+@-webkit-keyframes menu-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+  }
+}
+
+@keyframes menu-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu__overlay {
+    width: 100vw;
+  }
+  .list__page {
+    font-size: 12px;
+  }
+  .enemyImage__dom {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .list__pageHeading {
+    font-size: 24px !important;
+  }
+  .monster__bagHeading {
+    font-size: 30px !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
